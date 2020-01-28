@@ -2,7 +2,7 @@
 title: Subclassing 
 layout: docs
 permalink: /docs/subclassing.html
-prevPage: containers-overview.html
+prevPage: node-overview.html
 nextPage: faq.html
 ---
 The most important distinction when creating a subclass is whether you writing an ASViewController or an ASDisplayNode. This sounds obvious, but because some of these differences are subtle, it is important to keep this top of mind. 
@@ -27,7 +27,7 @@ This method defines the layout and does the heavy calculation on a **background 
 
 The layout spec object that you create is malleable up until the point that it is return in this method.  After this point, it will be immutable.  It's important to remember not to cache layout specs for use later but instead to recreate them when necessary.
 
-Because it is run on a background thread, you should not set any `node.view` or `node.layer` properties here. Also, unless you know what you are doing, do not create any nodes in this method. Additionally, it is not neccessary to begin this method with a call to super, unlike other method overrides. 
+Because it is run on a background thread, you should not set any `node.view` or `node.layer` properties here. Also, unless you know what you are doing, do not create any nodes in this method. Additionally, it is not necessary to begin this method with a call to super, unlike other method overrides. 
 
 ### `-layout`  
 
@@ -51,7 +51,7 @@ An `ASViewController` is a regular `UIViewController` subclass that has special 
 
 ### `-init` 
 
-This method is called once, at the very begining of an ASViewController's lifecycle. As with UIViewController initialization, it is best practice to **never access** `self.view` or `self.node.view` in this method as it will force the view to be created early. Instead, do any view access in -viewDidLoad. 
+This method is called once, at the very beginning of an ASViewController's lifecycle. As with UIViewController initialization, it is best practice to **never access** `self.view` or `self.node.view` in this method as it will force the view to be created early. Instead, do any view access in -viewDidLoad. 
 
 ASViewController's designated initializer is `initWithNode:`. A typical initializer will look something like the code below. Note how the ASViewController's node is created _before_ calling super. An ASViewController manages a node similarly to how a UIViewController manages a view, but the initialization is slightly different. 
 
