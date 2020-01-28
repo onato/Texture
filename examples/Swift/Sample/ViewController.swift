@@ -55,9 +55,7 @@ final class ViewController: ASViewController<ASDisplayNode>, ASTableDataSource, 
     }
     
     return {
-      let node = ASTextCellNode()
-      node.text = String(format: "[%ld.%ld] says hello!", indexPath.section, indexPath.row)
-      return node
+      return ASTextNode2CellNode()
     }
   }
 

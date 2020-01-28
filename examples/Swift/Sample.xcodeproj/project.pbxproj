@@ -13,6 +13,7 @@
 		161FE6897BB33A570A663F90 /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E6141C83F216FCA6D7EAEE /* Pods_Sample.framework */; };
 		6C5053DB19EE266A00E385DE /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5053D919EE266A00E385DE /* Default-667h@2x.png */; };
 		6C5053DC19EE266A00E385DE /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5053DA19EE266A00E385DE /* Default-736h@3x.png */; };
+		B1A9C3B723DFDAC6007BA5E6 /* ASTextNode2CellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A9C3B623DFDAC6007BA5E6 /* ASTextNode2CellNode.swift */; };
 		CCB01CAB1C5FEA6E00CA64C4 /* TailLoadingCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB01CAA1C5FEA6E00CA64C4 /* TailLoadingCellNode.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		6C5053D919EE266A00E385DE /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = SOURCE_ROOT; };
 		6C5053DA19EE266A00E385DE /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = SOURCE_ROOT; };
 		9B402DAAE8C6A8B9BE1A506B /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample/Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		B1A9C3B623DFDAC6007BA5E6 /* ASTextNode2CellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTextNode2CellNode.swift; sourceTree = "<group>"; };
 		CCB01CAA1C5FEA6E00CA64C4 /* TailLoadingCellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TailLoadingCellNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				050E7C7319D22E19004363C2 /* AppDelegate.swift */,
 				050E7C7519D22E19004363C2 /* ViewController.swift */,
 				050E7C7119D22E19004363C2 /* Supporting Files */,
+				B1A9C3B623DFDAC6007BA5E6 /* ASTextNode2CellNode.swift */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				CCB01CAB1C5FEA6E00CA64C4 /* TailLoadingCellNode.swift in Sources */,
 				050E7C7619D22E19004363C2 /* ViewController.swift in Sources */,
 				050E7C7419D22E19004363C2 /* AppDelegate.swift in Sources */,
+				B1A9C3B723DFDAC6007BA5E6 /* ASTextNode2CellNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
