@@ -16,7 +16,7 @@ final class WebService {
 			// Check for errors in responses.
 			let result = self.checkForNetworkErrors(data, response, error)
 			DispatchQueue.main.async {
-                // Parsing should happen off main
+        // Parsing should happen off main
 				switch result {
 				case .success(let data):
 					completion(resource.parse(data, response))
